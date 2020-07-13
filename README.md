@@ -1,1 +1,0 @@
-# respnsive-one
