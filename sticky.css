@@ -1,0 +1,21 @@
+.nav-one{border-bottom:4px solid #007BFF; background: rgba(0,0,0,.5) !important; position:fixed; top:0;z-index:1;left:0; right:0px;}
+.big-img{
+
+background:url('image/home.jpg');
+min-height:700px;
+background-size:cover;
+
+}
+.text-form{background:rgba(0,0,0,.5); padding-top:90px;}
+.text-form-one{}
+.text-form-two {background:#0C6FD8; padding:20px; border-radius:5px;  height:360px; margin-top:20px;}
+
+.text-form-two-btn {background:none; border:none; outline:1px solid white; border-radius:4px; }
+.text-form-two-btn:hover{background:white; color:black !important;}
+.exploration{background:#333333;}
+.exploratio-btn{color:white; background:none; border:none; outline:1px solid white; padding:8px 10px; margin:auto; display:block; }
+.exploratio-btn:hover{background:white; color:black;}
+.content-two{margin-top:90px!important;}
+.second-content-form{background:#007BFF; color:white;}
+.content-three{padding-top: 85px;}
+.btn-footer{margin:auto; display:block;}
