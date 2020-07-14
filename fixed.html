@@ -71,19 +71,19 @@
      <h3 class="text-center text-light">Sign Up Today</h3>
 	<p class="text-center text-light">Please fill out this form to register
      </p> 
-	 <form action=""> 
+	 <form> 
 	   <div class="form-group"> 
-	   <input type="text"class="form-control" placeholder="Username" />
+	   <input type="text"class="form-control" name="Name"placeholder="Username" />
 	 
 	   </div>
 	   
 	   <div class="form-group"> 
-	   <input type="email"class="form-control" placeholder="email" />
+	   <input type="email"class="form-control" placeholder="email" name="Email" />
 	 
 	   </div>
 	   
 	   <div class="form-group"> 
-	   <input type="password"class="form-control" placeholder="password" />
+	   <input type="password"class="form-control" placeholder="password" name="password"/>
 	 
 	   </div>
 	 
@@ -243,24 +243,28 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+       <form action="https://formspree.io/rayhansharifkhan@gmail.com" method="POST">
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Name</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="recipient-name" name="Name">
           </div>
 		  
 		  <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Email</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <label for="recipient-email" class="col-form-label">Email</label>
+            <input type="text" class="form-control" id="recipient-email" name="email">
+          </div>
+		  <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="recipient-name" name="password">
           </div>
           <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <label for="message-pass" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-pass"name="messege"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer justify-content-start">
-        <button type="submit" class="btn btn-primary">Send</button>
+        <input type="submit" class="btn btn-primary" value="send">
       
       </div>
     </div>
