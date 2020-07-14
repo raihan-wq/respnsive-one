@@ -19,7 +19,7 @@
  
  
  </head>
- <body>  
+ <body  data-spy="scroll" data-target=".navbar">  
  
   <section class="big-img">  
   <!-- this is navbar item--> 
@@ -35,10 +35,10 @@
 		</button>
 		<div class="collapse navbar-collapse " id="navbar-one"> 
 		  <ul class="navbar-nav ml-auto">
-		  	<li class="nav-item active"><a href="#" class="nav-link">home</a></li>
-		  	<li class="nav-item active"><a href="#" class="nav-link">Explore</a></li>
-		  	<li class="nav-item active"><a href="#" class="nav-link">Creat</a></li>
-		  	<li class="nav-item active"><a href="#" class="nav-link">Share</a></li>
+		  	<li class="nav-item active"><a href="#name1" class="nav-link">home</a></li>
+		  	<li class="nav-item active"><a href="#name2" class="nav-link">Explore</a></li>
+		  	<li class="nav-item active"><a href="#name3" class="nav-link">Creat</a></li>
+		  	<li class="nav-item active"><a href="#name4" class="nav-link">Share</a></li>
 		  </ul>
 
 		
@@ -48,7 +48,7 @@
 		</nav> 
 		
 <!-- form section --->
-<div class="text-form  ">
+<div class="text-form  " id="name1">
 
 <div class="row  text-form-main d-flex container m-auto">
 
@@ -102,7 +102,7 @@
 </div>
 <!-- Explor section -->
 
-    <div class="text-form p-5 exploration">
+    <div class="text-form p-5 exploration" >
 	
 	<div class="container m-auto exploration-main">
 	   <h1 class="text-center text-light">Explore</h1>
@@ -119,7 +119,7 @@
 		</section>
 <!-- content second part-->		
 		
-		<div class="container m-auto content-two"> 
+		<div class="container m-auto content-two" id="name2"> 
 		
 		  <div class="container row"> 
 		  
@@ -162,7 +162,7 @@
   <!-- content part three-->
   
 				
-		<div class="container-fluid m-auto bg-dark pb-5"> 
+		<div class="container-fluid m-auto bg-dark pb-5" id="name3"> 
 		
 		  <div class="container row m-auto content-three text-light"> 
 		    <div class="col-md-6">
@@ -198,7 +198,7 @@
 	</div>
 <!-- contentent four -->
 		
-			<div class="container m-auto content-two"> 
+			<div class="container m-auto content-two" id="name4"> 
 		
 		  <div class="container row"> 
 		  
@@ -228,8 +228,44 @@
 	   <h1 class="text-center text-light">LoopLAB</h1>
 	   <p class="text-light text-center px-3 lead">Copyright@2018</p>
 	   <p  class="light text-center text-light" style="font-size:16px;">Designed <span class="text-warning">By:Raihan<span></p>
+	   
+	   <!-- modal form-->
 	
-	   <button class=" btn bg-primary btn-footer text-light m-auto">Contact us</button>
+	   <button class=" btn bg-primary btn-footer text-light m-auto" data-toggle="modal" data-target="#form1">Contact us</button>
+	   
+	   <div class="modal fade " id="form1"  role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+		  
+		  <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <button type="submit" class="btn btn-primary">Send</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
 	
 	
 	
@@ -237,23 +273,7 @@
 	</div>
 
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 
 			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" >
 			</script>
