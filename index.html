@@ -229,8 +229,52 @@
 	   <p class="text-light text-center px-3 lead">Copyright@2018</p>
 	   <p  class="light text-center text-light" style="font-size:16px;">Designed <span class="text-warning">By:Raihan<span></p>
 	
-	   <button class=" btn bg-primary btn-footer text-light m-auto">Contact us</button>
+	  <!-- modal form-->
 	
+	   <button class=" btn bg-primary btn-footer text-light m-auto" data-toggle="modal" data-target="#form1">Contact us</button>
+	   
+	   <div class="modal fade " id="form1"  role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form action="https://formspree.io/rayhansharifkhan@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name" name="Name">
+          </div>
+		  
+		  <div class="form-group">
+            <label for="recipient-email" class="col-form-label">Email</label>
+            <input type="text" class="form-control" id="recipient-email" name="email">
+          </div>
+		  <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="recipient-name" name="password">
+          </div>
+          <div class="form-group">
+            <label for="message-pass" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-pass"name="messege"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <input type="submit" class="btn btn-primary" value="send">
+      
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	
+	</div>
+	</div>
 	
 	
 	</div>
